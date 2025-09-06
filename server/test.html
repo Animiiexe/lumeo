@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO Test</title>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  </head>
+  <body>
+    <h1>Socket.IO Test</h1>
+    <script>
+      const socket = io("http://localhost:4000");
+
+      socket.on("connect", () => {
+        console.log("✅ Connected as", socket.id);
+      });
+
+      socket.on("disconnect", () => {
+        console.log("❌ Disconnected");
+      });
+    </script>
+  </body>
+</html>
