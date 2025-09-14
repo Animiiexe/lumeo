@@ -137,7 +137,7 @@ function WatchParty() {
       {isDarkMode ? <div className="fixed w-full h-full inset-0 z-10">
         <LightRays
           raysOrigin="top-center"
-          raysColor="#00ffff"
+          raysColor="#7B1FA2"
           raysSpeed={1.5}
           lightSpread={0.8}
           rayLength={1.2}
