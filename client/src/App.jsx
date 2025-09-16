@@ -7,6 +7,7 @@ import YouTube from "react-youtube"
 import LightRays from "./components/LightRays"
 
 const SERVER_URL = import.meta.env.VITE_SERVER_PORT;
+
 function WatchParty() {
   const [isDarkMode, setIsDarkMode] = useState(false)
   const [socket, setSocket] = useState(null)

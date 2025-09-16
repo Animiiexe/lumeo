@@ -13,7 +13,10 @@ const httpServer = createServer(app);
 const PORT = process.env.PORT || 4000;
 const io = new Server(httpServer, {
   cors: {
-    origin: "*",
+    origin: [
+            "https://lumeo-gold.vercel.app/",
+      "http://localhost:5173",
+    ],
   },
 });
 
